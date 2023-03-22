@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scaale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row m-5">
+                <div class="col-md-12">
+                    <h1>CV Generator</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row m-5">
+                <div class="col-md-12">
+                    <h3>Please fill out your details</h3>
+                </div>
+            </div>
+            <div class="row m-5">
+                <div class="col-md-7">
+                    <form method="POST">
+                        {% csrf_token%}
+                        <div class="form-group">
+                            <label for="">Name</label >
+                                <input placeholder="Eg Tejas Dongre" type="text" name="name" class="form-control" id="name">
+                            </div>        
+            
+                            <div class="form-group">
+                                <label for="">Phone</label>
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+                            </div>
+                            <div class="form-group">
+                                <label for="">School</label>
+                                <input type="text" class="form-control" id="school" name="school" placeholder="Enter your school name">
+                            </div>
+                            <div class="form-group">
+                                <label for="">university</label>
+                                <input type="university" class="form-control" id="university" name="university" placeholder="Enter your university name
+                                ">
+                            </div>
+                            <div class="form-group">
+                                <label for="">degree</label>
+                                <input type="degree" class="form-control" id="degree" name="degree" placeholder="Enter your degree">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="">about_you</label>
+                                <input type="about_you" class="form-control" id="about_you" name="about_you" placeholder="Write about you
+                                ">
+                            </div>
+                    
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Build your Industry-level resume in minutes!">
+    <meta name="Group-4" content="SEM-V">
+    <title>Resume Builder | Mini-project SEM-V</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + settings main styles -->
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
+    
+    <!-- page navbar -->
+    <nav class="page-navbar" data-spy="affix" data-offset-top="10">
+        <ul class="nav-navbar container">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="builder.html" class="nav-link">Builder</a></li>
+            <li class="nav-item"><a href="#" class="logo"><img src="assets/imgs/logo.svg" width="150" alt="Resume Builder"></a></li>
+            <li class="nav-item"><a href="screening.html" class="nav-link">Screening</a></li>
+            <li class="nav-item search"><a class="nav-link" href="login.html">Login / Sign In</a></li>
+
+        </ul>
+    </nav><!-- end of page navbar -->
+
+    <div class="theme-selector">
+        <a href="javascript:void(0)" class="spinner">
+            <i class="ti-paint-bucket"></i>
+        </a>
+        <div class="body">
+            <a href="javascript:void(0)" class="light"></a>
+            <a href="javascript:void(0)" class="dark"></a>
+        </div>
+    </div>  
+
+    <!-- page header -->
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1 class="header-title">Want to build your resume?</h1>
+            <p class="header-subtitle">With Resume Builder you can get your Industry-level Resume in minutes!</p>
+            <input type=button class="btn btn-theme-color" onClick="location.href='builder.html' " value='Build now'>
+
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- page container -->
+    <div class="container page-container">
+        <div class="col-md-10 col-lg-8 m-auto">
+            <h6 class="title mb-4">3 EASY STEPS TO CREATE YOUR PERFECT RESUME</h6>
+        </div>  
+
+        <!-- row -->
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <a href="javascript:void(0)" class="overlay-img">
+                    <img src="assets/imgs/img-1.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page">  
+                    <div class="overlay"></div> 
+                    <div class="des">
+                        <h1 class="title">Choose your resume template</h1>
+                        <h6 class="subtitle">10+ options to choose from</p>
+                        <p>Our professional resume templates are designed strictly following all industry guidelines and best practices.</p>
+                    </div>          
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="javascript:void(0)" class="overlay-img">
+                    <img src="assets/imgs/img-2.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page">  
+                    <div class="overlay"></div>  
+                    <div class="des">
+                        <h1 class="title">Show what you're made of</h1>
+                        <h6 class="subtitle">Showcase your talent without any hassle</p>
+                        <p>Not finding the right fields to showcase yourself? We´ve added the pre-requisite fields to fill to make your work hassle free.</p>
+                    </div>          
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="javascript:void(0)" class="overlay-img">
+                    <img src="assets/imgs/img-3.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page">  
+                    <div class="overlay"></div> 
+                    <div class="des">
+                        <h1 class="title">Download your resume</h1>
+                        <h6 class="subtitle">Ready to-go PDF</p>
+                        <p>Start impressing employers. Download your awesome resume and land the job you are looking for, effortlessly.</p>
+                    </div>          
+                </a>
+            </div>          
+        </div><!-- end of row -->
+
+        <div class="col-md-10 col-lg-8 m-auto">
+            <h6 class="title mb-4 mt-5 pt-5">Our Tools</h6>
+        </div>
+
+        <!-- row -->
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <a href="builder.html" class="card">
+                    <img src="assets/imgs/blog-1.jpg" class="card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page">
+                    <div class="card-body">
+                        <h3 class="card-title">Builder</h3>
+                        <p>Build a brand new resume in minutes with all the required information by industry standards researched over
+                            10,000+ resumes. Just fill out a simple form & choose from beautiful templates designed by artists. </p>
+                    </div>                  
+                </a>
+            </div>  
+            <div class="col-md-6">
+                <a href="screening.html" class="card">
+                    <img src="assets/imgs/blog-2.jpg" class="card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page">
+                    <div class="card-body">
+                        <h3 class="card-title">Screening</h3>
+                        <p>Our screening tool offers suggested courses & skillset with respect to your specific career. We provide you with updated
+                            links for same that can save a lot of time. From computer science, AI-ML to IT & more. We plan to expand in future.
+                        </p>
+                    </div>                  
+                </a>
+            </div>  
+        </div><!-- end of row -->
+
+       
+    </div> <!-- end of page container -->
+
+    <!--footer & pre footer -->
+    <div class="contact-section">
+        <div class="overlay"></div>
+        <!-- container -->
+        <div class="container">
+            <div class="col-md-10 col-lg-8 m-auto">
+                <h6 class="title mb-2">Contact Us</h6>
+                <p class="mb-5">Feel free to drop in.</p>
+                <form action="" class="form-group">
+                    <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                    <input type="email" class="form-control" placeholder="Enter Email"requried>
+                    <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                    <input type="submit" value="Send Message" class="form-control">
+                </form>
+            </div>
+
+            <!-- footer -->
+            <footer class="footer">
+                <p class="infos">&copy; 2022 Made by Group-4 (SEM-V)</p>
+            </footer><!-- end of footer -->
+
+        </div><!-- end of container -->
+    </div><!-- end of pre footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- settings js -->
+    <script src="assets/js/settings.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  {% comment %} <link type="text/css" rel="stylesheet" href="{% static 'C:\Work\django\Resume_Builder\resumebuilder\myapp\static\try_css.css' %}"> {% endcomment %}
+  <link type="text/css" rel="stylesheet" href="{% static 'try_css.css' %}">
+  <script src="try_js.js"></script>
+  </head>
+
+<body>
+<div class="resume-wrapper">
+	<section class="profile section-padding">
+		<div class="container">
+			<div class="picture-resume-wrapper">
+        <div class="picture-resume">
+        <span><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="" /></span>
+        <svg version="1.1" viewBox="0 0 350 350">
+  
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9" result="cm" />
+    </filter>
+  </defs>
+  
+  
+<g filter="url(#goo)" >  
+  
+  <circle id="main_circle" class="st0" cx="171.5" cy="175.6" r="130"/>
+  
+  <circle id="circle" class="bubble0 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble1 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble2 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble3 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble4 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble5 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble6 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble7 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble8 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble9 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble10 st1" cx="171.5" cy="175.6" r="122.7"/>
+
+</g>  
+</svg>
+      </div>
+         <div class="clearfix"></div>
+ </div>
+      <div class="name-wrapper">
+        <h1>{{ data.name }} <br/>{{ data.lastname }}</h1><!-- YOUR NAME AND LAST NAME  -->
+      </div>
+      <div class="clearfix"></div>
+      <div class="contact-info clearfix">
+      	<ul class="list-titles">
+      		<li>Call</li>
+      		<li>Mail</li>
+      		<li>Web</li>
+      		<li>Home</li>
+      	</ul>
+        <ul class="list-content ">
+        	<li>{{ data.phone }}</li> <!-- YOUR PHONE NUMBER  -->
+        	<li>{{ data.email }}</li> <!-- YOUR EMAIL -->
+        	<li><a href="#">{{ data.website }}</a></li> <!-- YOUR WEBSITE  -->
+        	<li>Country</li> <!-- YOUR STATE AND COUNTRY  -->
+        </ul>
+      </div>
+      <div class="contact-presentation"> <!-- YOUR PRESENTATION RESUME  -->
+      	<p><span class="bold"></span> {{ data.aboutyou}} </p>
+      </div>
+      <div class="contact-social clearfix">
+      	<ul class="list-titles">
+      		<li>LinkedIn</li>
+      		<li>Github</li>
+      	</ul>
+        <ul class="list-content"> <!-- REMEMBER TO PUT THE URL ON THE HREF TAG  -->
+      		<li><a href="">{{ data.linkedin }}</a></li> <!-- YOUR TWITTER USER  -->
+      		<li><a href="">{{ data.github }}</a></li> <!-- YOUR DRIBBBLE USER  -->
+      		{% comment %} <li><a href="">janderson</a></li> <!-- YOUR BEHANCE USER  --> {% endcomment %}
+      	</ul>
+      </div>
+		</div>
+	</section>
+  
+  <section class="experience section-padding">
+  	<div class="container">
+  		<h3 class="experience-title">Experience</h3>
+              
+        <div class="company-wrapper clearfix">
+      		<div class="experience-title">{{ data.company }}</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+          <div class="time">{{ data.company_exp}}</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+      	</div>
+        
+         <div class="job-wrapper clearfix">
+        	<div class="experience-title">{{ data.experience_title}}</div> <!-- JOB TITLE  -->
+        </div>  
+      </div><!--Skill experience-->
+      
+      <div class="section-wrapper clearfix">
+      	<h3 class="section-title">Skills</h3>  <!-- YOUR SET OF SKILLS  -->
+        	<ul>
+        		{% comment %} <li class="skill-percentage" >HTML / HTML5</li> {% endcomment %}
+            <li class="skill-percentage1"><label style="colour:red !important ;"  for="file" >HTML</label><br>
+            <progress class="skill-percentage" id="file" max="10" value="{{data.htmlskill}}">70%</progress></li>
+        		<li class="skill-percentage1"><label style="colour:red;"  for="file" >CSS / CSS3 / SASS / LESS</label><br>
+            <progress class="skill-percentage" id="file" max="10" value="{{data.cssskill}}">70%</progress></li>
+            <li class="skill-percentage1"><label style="colour:red;"  for="file" >Python</label><br>
+            <progress class="skill-percentage" id="file" max="10" value="{{data.pythonskill}}">70%</progress></li>
+            <li class="skill-percentage1"><label style="colour:red;"  for="file" >Javascript</label><br>
+            <progress class="skill-percentage" id="file" max="10" value="{{data.javascriptskill}}">70%</progress></li>
+            <li class="skill-percentage1"><label style="colour:red;"  for="file" >Java/c/c++</label><br>
+            <progress class="skill-percentage" id="file" max="10" value="{{data.cskill}}">70%</progress></li>
+            <li class="skill-percentage1"><label style="colour:red;"  for="file" >Database Management</label><br>
+            <progress class="skill-percentage" id="file" max="10" value="{{data.dbmsskill}}">70%</progress></li>
+            <li class="skill-percentage1"><label style="colour:red;"  for="file" >Competitive Coding</label><br>
+            <progress class="skill-percentage" id="file" max="10" value="{{data.codingskill}}">70%</progress></li>
+        	 </ul>
+        
+      </div>
+      
+      <div class="section-wrapper clearfix">
+        <h3 class="section-title">Hobbies</h3>  <!-- DESCRIPTION OF YOUR HOBBIES -->
+        <p>{{data.hobbies}}</p>
+        
+      </div>
+      
+  	</div>
+  </section>
+  
+  <div class="clearfix"></div>
+</div>
+</body>
+</html>

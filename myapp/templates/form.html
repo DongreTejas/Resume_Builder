@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Resume Form</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+    {% comment %} <li class="nav-item"><a href="#" class="logo"> {% endcomment %}
+        {% comment %} {% load static %} <img src="{% static "dj_app/media/logo.svg" %}" width="150"</a></li> {% endcomment %}
+
+    <!--Stylesheet-->
+
+    <style media="screen">
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-item {
+    padding-top: 20px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  text-align: center;
+}
+
+body{
+    background-color: #080710;
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #156d73,
+        #8af8e9
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    height: 2260px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 20px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+
+.file-upload .file-upload-select {
+	display: block;
+	color: #dbdbdb;
+	cursor: pointer;
+	text-align: left;
+	background: #2d343c;
+	overflow: hidden;
+	position: relative;
+	border-radius: 6px;
+}
+.file-upload .file-upload-select .file-select-button {
+	background: #2d343c;
+	padding: 10px;
+	display: inline-block;
+}
+.file-upload .file-upload-select .file-select-name {
+	display: inline-block;
+	padding: 10px;
+}
+.file-upload .file-upload-select:hover .file-select-button {
+	background: #324759;
+	color: #ffffff;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+.file-upload .file-upload-select input[type="file"] {
+	display: none;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form method="post">
+        <h3>Fill Details here</h3>
+
+        <label for="Firstname">First Name</label>
+        <input type="text" placeholder="Enter Your First Name" id="Firstname" name="Firstname">
+
+        <label for="Lastname">Lastname</label>
+        <input type="text" placeholder="Enter Your Lastname" id="lastname" name="lastname">
+
+        <label for="Phone_number">Phone number</label>
+        <input type="tel" placeholder="Enter Your Phone Number" id="phone" name="phone">
+
+        <label for="Email">Email address</label>
+        <input type="email" placeholder="Enter Your Email address" id="email" name="email">
+
+        <label for="Country">Country</label>
+        <input type="text" placeholder="Enter Your country name" id="country" name="country">
+
+        <label for="aboutyou">About You</label>
+        <input type="text" placeholder="Enter about you" id="aboutyou" name="aboutyou">
+
+
+        <label for="website">Website</label>
+        <input type="text" placeholder="Enter Your website name" id="website" name="website">
+
+        <label for="company">Company name</label>
+        <input type="text" placeholder="Enter your company name" id="company" name="company">
+
+        <label for="company_exp">Company Experience</label>
+        <input type="text" placeholder="Enter your work Experience" id="company_exp" name="company_exp">
+
+        <label for="experience_title">Experience title</label>
+        <input type="text" placeholder="Enter experience title" id="experience_title" name="experience_title">
+
+
+        <label for="linkedin">linkedIn</label>
+        <input type="text" placeholder="Enter linkedIn " id="linkedin" name="linkedin">
+
+        <label for="github">Github</label>
+        <input type="text" placeholder="Enter your Github link  " id="github" name="github">
+
+        <label for="htmlskill">HTML skills</label>
+        <input type="text" placeholder="Enter your HTMK skills (out of 10)  " id="htmlskill" name="htmlskill">
+
+        <label for="cssskill">CSS skills</label>
+        <input type="text" placeholder="Enter your CSS skills (out of 10)  " id="cssskill" name="cssskill">
+
+        <label for="pythonskill">Python skills</label>
+        <input type="text" placeholder="Enter your python skills (out of 10)  " id="pythonskill" name="pythonskill">
+
+        <label for="javascriptskill">Javascript skills</label>
+        <input type="text" placeholder="Enter your javascript skills (out of 10)  " id="javascriptskill" name="javascriptskill">
+
+        <label for="csskill">Java/C/C++ skills</label>
+        <input type="text" placeholder="Enter your Java/C/C++ skills (out of 10)  " id="csskill" name="csskill">
+
+        <label for="dbmsskill">Databse Management skills</label>
+        <input type="text" placeholder="Enter your Databse Management skills (out of 10)  " id="dbmsskill" name="dbmsskill">
+       
+        <label for="codingskill">Competitive Coding skills</label>
+        <input type="text" placeholder="Enter your competitive coding skills (out of 10)  " id="codingskill" name="codingskill">
+        
+        <!-- <label for="internships">Internships</label>
+        <input type="text" placeholder="Enter internships you have done" id="Internships"> -->
+
+        <label for="others">Hobbies</label>
+        <input type="text" placeholder="Enter your hobbies" id="hobbies" name="hobbies">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>

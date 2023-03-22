@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Quicksand", sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
+p {
+    font-family-sans-serif: "Quicksand", sans-serif;
+}
+
+
+div.stApp.css-ffhzg2.eczokvf1 {
+    background-image: linear-gradient(210deg, rgb(28, 208, 245, 0.4), rgba(29, 29, 65, 0.773), black);
+}
+
+section.css-x8wxsk.exg6vvm15 {
+    padding: 8px 20px;
+    border-radius: 30px;
+    border: 2px solid #9fddff;
+    color: #fff;
+    background: transparent;
+    outline: 0;
+    -webkit-transition: all, 0.3s;
+    transition: all, 0.3s;
+    font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
+    font-weight: bold;
+}
+
+button.css-5uatcg.edgvbvh10 {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 2px solid #9fddff;
+    color: #fff;
+    background: transparent;
+    outline: 0;
+    -webkit-transition: all, 0.3s;
+    transition: all, 0.3s;
+    font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
+    font-weight: bold;
+}
+
+svg.e1fb0mya1 .css-noeb3a.ex0cdmw0 {
+    color: #9fddff;
+}
+
+img {
+    width: 200px;
+    height: 100px;
+    padding: 0%;
+    margin-left: 0;
+}
+
+div.st-bf .st-bg .st-bz .st-c0 .st-c1 .st-b3 .st-c2 .st-c3 .st-bh .st-c4 .st-c5 .st-c6 .st-c7 {
+    padding: 8px 20px;
+    border-radius: 30px;
+    border: 2px solid #9fddff;
+    color: #fff;
+    background: transparent;
+    outline: 0;
+    -webkit-transition: all, 0.3s;
+    transition: all, 0.3s;
+    font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
+    font-weight: bold;
+}
+
+span.css-10trblm .e16nr0p30 {
+    color: aqua;
+}
+
+span.css-10trblm.e16nr0p30 {
+    font-family: "Quicksand";
+    font-size: large;
+    font: optional;
+    color: rgb(244, 246, 236);
+}
+
+div.css-1fttcpj .exg6vvm11 {
+    font-family: "Quicksand";
+}
+
+div.thumbnails {
+    color: rgb(0, 0, 0, 0.5);
+}
+
+strong {
+    color: beige;
+}
+
+span.rti--tag .go1186250972 {
+    background-color: rgb(48, 156, 214, 0.6);
+}
+
+div.rti--container .go309598777 {
+    background-color: rgb(48, 156, 214, 0.6);
+}
+
+.stProgress>div>div>div>div {
+    background-color: rgb(0, 255, 255);
+}
+
+.stProgress>div>div>div>div {
+    background-color: rgba(111, 195, 206, 0.5);
+}
+
+.st-eu .st-es {
+    background-color: rgb(0, 255, 255, 0.5);
+}
+
+.st-df {
+    background-color: rgba(61, 213, 109, 0.2);
+}
+
+.st-de {
+    color: rgb(223, 253, 233);
+}
+
+.st-bb {
+    opacity: 1;
+}
+
+div.st-ae .st-af .st-ag .st-ah .st-ai .st-aj .st-ak .st-de .st-am .st-ba .st-an .st-ao .st-ap .st-aq .st-ar .st-as .st-df .st-au .st-av .st-aw .st-ax .st-ay .st-bb .st-b0 .st-b1 .st-b2 .st-b3 .st-b4 .st-b5 .st-b6 .st-b7 {
+    background-color: rgb(0, 255, 255, 0.5);
+}
+
+.st-bb {
+    opacity: 1;
+}
+
+.st-de {
+    color: rgb(255, 255, 255);
+}
+
+.st-df {
+    background-image: linear-gradient(45deg, rgba(0, 157, 255, 0.501), rgba(0, 0, 255, 0.29), rgba(58, 8, 107, 0.671));
+}
+
+.st-bb {
+    opacity: 1;
+}
+
+.st-bb {
+    opacity: 1;
+}
+
+.st-es {
+    background-image: linear-gradient(45deg, rgba(0, 0, 255, 0.29), rgba(0, 157, 255, 0.501));
+}
+
+.st-er {
+    color: rgb(255, 255, 255);
+}
+
+.rti--container {
+    max-width: inherit;
+    background-color: rgb(0, 255, 255, 0.5);
+}
+
+span.rti--tag .go1186250972 {
+    background-color: rgb(0, 255, 255, 0.5);
+}
+
+div.st-be .st-b8 .st-df {
+    background-color: #343a40ce;
+}
+
+.st-eu {
+    background-image: linear-gradient(45deg, rgba(0, 0, 255, 0.29), rgba(0, 157, 255, 0.501));
+    ;
+}
+
+
+.st-et {
+    color: rgb(255, 255, 194);
+}
+
+div.css-183lzff .eyqtai90 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.StyledThumbValue .css-10y5sf6 .e88czh82 {
+
+    background-image: linear-gradient(45deg, rgba(0, 157, 255, 0.501), rgba(0, 0, 255, 0.29));
+}
+
+span.rti--tag .go1186250972 {
+    background-color: #17a2b8;
+}
+
+.rti--container {
+    max-width: inherit;
+    /* --rti-tag: var(--primary-color)!important; */
+    background-color: var(--secondary-background-color);
+    font: var(--font);
+}
+
+.css-183lzff {
+    font-family: "Quicksand";
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.rti--container {
+    max-width: inherit;
+    --rti-tag: #4b8eff !important;
+    background-color: var(--secondary-background-color);
+    font: var(--font);
+}
+
+.rti--container {
+    max-width: inherit;
+    --rti-tag: #1b86ded6 !important;
+    background-color: var(--secondary-background-color);
+    font: var(--font);
+}
+
+.css-10y5sf6 {
+    font-family: "Source Code Pro", monospace;
+    font-size: 14px;
+    padding-bottom: 9.33333px;
+    color: rgb(239, 245, 246);
+    top: -22px;
+    position: absolute;
+    white-space: nowrap;
+    background-color: transparent;
+    line-height: 1.6;
+    font-weight: normal;
+}
+
+st-dj {
+    background: linear-gradient(to right, rgba(78, 75, 255, 0.778) 0%, rgb(96, 75, 255) 33.3333%, rgba(101, 204, 220, 0.25) 33.3333%, rgba(172, 177, 195, 0.668) 100%);
+}

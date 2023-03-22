@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Build your Industry-level resume in minutes!">
+    <meta name="Group-4" content="SEM-V">
+    <title>Resume_Form</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+    
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + settings main styles -->
+	<link rel="stylesheet" href="assets/css/style.css">
+    
+    <!--Stylesheet-->
+    <style media="screen">
+        *,
+  *:before,
+  *:after{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+  
+  .nav-item {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  body{
+      background-color: #080710;
+  }
+  .background{
+      width: 430px;
+      height: 520px;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      left: 50%;
+      top: 50%;
+  }
+  .background .shape{
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      border-radius: 50%;
+  }
+  .shape:first-child{
+      background: linear-gradient(
+          #1845ad,
+          #23a2f6
+      );
+      left: -80px;
+      top: -80px;
+  }
+  .shape:last-child{
+      background: linear-gradient(
+          to right,
+          #156d73,
+          #8af8e9
+      );
+      right: -30px;
+      bottom: -80px;
+  }
+  .form1{
+      height: 1750px;
+      width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgba(255,255,255,0.13);
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(255,255,255,0.1);
+      box-shadow: 0 0 40px rgba(8,7,16,0.6);
+      padding: 50px 35px;
+      margin-top: 10%;
+  }
+  form *{
+      font-family: 'Poppins',sans-serif;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+      outline: none;
+      border: none;
+  }
+  form h3{
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 42px;
+      text-align: center;
+  }
+  
+  label{
+      display: block;
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: 500;
+  }
+  input{
+      display: block;
+      height: 50px;
+      width: 100%;
+      background-color: rgba(255,255,255,0.07);
+      border-radius: 3px;
+      padding: 0 10px;
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 300;
+  }
+  ::placeholder{
+      color: #e5e5e5;
+  }
+  button{
+      margin-top: 20px;
+      width: 100%;
+      background-color: #ffffff;
+      color: #080710;
+      padding: 15px 0;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  .social{
+    margin-top: 30px;
+    display: flex;
+  }
+  .social div{
+    background: red;
+    width: 150px;
+    border-radius: 3px;
+    padding: 5px 10px 10px 5px;
+    background-color: rgba(255,255,255,0.27);
+    color: #eaf0fb;
+    text-align: center;
+  }
+  .social div:hover{
+    background-color: rgba(255,255,255,0.47);
+  }
+  .social .fb{
+    margin-left: 25px;
+  }
+  .social i{
+    margin-right: 4px;
+  }
+  
+  .file-upload .file-upload-select {
+      display: block;
+      color: #dbdbdb;
+      cursor: pointer;
+      text-align: left;
+      background: #2d343c;
+      overflow: hidden;
+      position: relative;
+      border-radius: 6px;
+  }
+  .file-upload .file-upload-select .file-select-button {
+      background: #2d343c;
+      padding: 10px;
+      display: inline-block;
+  }
+  .file-upload .file-upload-select .file-select-name {
+      display: inline-block;
+      padding: 10px;
+  }
+  .file-upload .file-upload-select:hover .file-select-button {
+      background: #324759;
+      color: #ffffff;
+      transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+  }
+  .file-upload .file-upload-select input[type="file"] {
+      display: none;
+  }
+  
+  
+  
+      </style>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
+    
+    <!-- page navbar -->
+    <nav class="page-navbar" data-spy="affix" data-offset-top="10">
+        <ul class="nav-navbar container">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="builder.html" class="nav-link">Builder</a></li>
+            <li class="nav-item"><a href="#" class="logo"><img src="assets/imgs/logo.svg" width="150" alt="Resume Builder"></a></li>
+            <li class="nav-item"><a href="screening.html" class="nav-link">Screening</a></li>
+            <li class="nav-item search"><a class="nav-link" href="login.html">Login / Sign In</a></li>
+
+        </ul>
+    </nav><!-- end of page navbar -->
+
+    <div class="theme-selector">
+        <a href="javascript:void(0)" class="spinner">
+            <i class="ti-paint-bucket"></i>
+        </a>
+        <div class="body">
+            <a href="javascript:void(0)" class="light"></a>
+            <a href="javascript:void(0)" class="dark"></a>
+        </div>
+    </div>  
+
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form class="form1">
+        <h3>Fill Details here</h3>
+
+        <label for="Firstname">First Name</label>
+        <input type="text" placeholder="Enter Your First Name" id="Firstname">
+
+        <label for="Lastname">Lastname</label>
+        <input type="text" placeholder="Enter Your Lastname" id="Surname">
+
+        <label for="photo">Upload Photo</label>
+        <div class="file-upload">
+            <div class="file-upload-select">
+                <div class="file-select-button" >Choose File</div>
+            <div class="file-select-name">No file chosen...</div> 
+            <input type="file" name="file-upload-input" id="file-upload-input">
+            </div>
+        </div>
+        
+        <label for="Phone_number">Phone number</label>
+        <input type="tel" placeholder="Enter Your Phone Number" id="Phone_number">
+
+        <label for="Email">Email address</label>
+        <input type="email" placeholder="Enter Your Email address" id="Email">
+        
+        <label for="School_name">School name</label>
+        <input type="text" placeholder="Enter Your School name" id="School_name">
+
+        <label for="School_board">Board of School </label>
+        <input type="text" placeholder="Enter Your School board" id="School_board">
+
+        <label for="School_pyear">School Passing Year</label>
+        <input type="text" placeholder="Enter Your School Passing Year" id="School_pyear">
+
+        <label for="uni_name">University name</label>
+        <input type="text" placeholder="Enter Your University name" id="uni_name">
+
+        <label for="uni_pyear">University Passing Year</label>
+        <input type="text" placeholder="Enter Your University Passing Year" id="uni_pyear">
+
+        <label for="degree">Degree</label>
+        <input type="text" placeholder="Enter Your degree" id="degree">
+
+        <label for="Projects">Projects</label>
+        <input type="text" placeholder="Enter projects you have done" id="Projects">
+    
+        <label for="internships">Internships</label>
+        <input type="text" placeholder="Enter internships you have done" id="Internships">
+
+        <label for="about">Write about you(Bio)</label>
+        <input type="text" placeholder="Enter about you" id="degree">
+
+        <label for="hobbies">Hobbies</label>
+        <input type="text" placeholder="Enter your Hobbies" id="hobbies">
+
+        <button>Submit</button>
+        
+    </form>
+
+    <!--footer & pre footer -->
+    <div class="contact-section">
+        <div class="overlay"></div>
+        <!-- container -->
+        <div class="container">
+            <div class="col-md-10 col-lg-8 m-auto">
+                <h6 class="title mb-2">Contact Us</h6>
+                <p class="mb-5">Feel free to drop in.</p>
+                <form action="" class="form2">
+                    <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                    <input type="email" class="form-control" placeholder="Enter Email"requried>
+                    <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                    <input type="submit" value="Send Message" class="form-control">
+                </form>
+            </div>
+
+            <!-- footer -->
+            <footer class="footer">
+                <p class="infos">&copy; MiniProject 2022 Made by Group-4 (SEM-V)</p>
+            </footer><!-- end of footer -->
+
+        </div><!-- end of container -->
+    </div><!-- end of pre footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- settings js -->
+    <script src="assets/js/settings.js"></script>
+
+    <script>
+        let fileInput = document.getElementById("file-upload-input");
+        let fileSelect = document.getElementsByClassName("file-upload-select")[0];
+        fileSelect.onclick = function() {
+            fileInput.click();
+        }
+        fileInput.onchange = function() {
+            let filename = fileInput.files[0].name;
+            let selectName = document.getElementsByClassName("file-select-name")[0];
+            selectName.innerText = filename;
+        }
+        </script> 
+
+</body>
+</html>
